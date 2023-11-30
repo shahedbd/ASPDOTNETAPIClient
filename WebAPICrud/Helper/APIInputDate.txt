@@ -1,0 +1,39 @@
+
+
+WebAPICrud
+https://localhost:5001/swagger/index.html
+http://localhost:5186/swagger/index.html
+
+
+-- Add PersonalInfo: API Input
+{
+  "id": 0,
+  "createdDate": "2023-11-18",
+  "updatedDate": "2023-11-18",
+  "firstName": "Mr Zames",
+  "lastName": "Bond",
+  "dateOfBirth": "1988-11-18",
+  "city": "London",
+  "country": "UK",
+  "mobileNo": "12345789",
+  "email": "zames@gmail.com",
+  "pasportNo": "P123457",
+  "nid": "NID123456789"
+}
+
+-- Edit
+{
+  "id": 1,
+  "firstName": "Tom-REyibb",
+  "lastName": "F3g6O",
+  "dateOfBirth": "2023-10-11T21:23:32.1303682",
+  "city": "9K0M",
+  "country": "3BK3",
+  "mobileNo": "42107",
+  "email": "dev@svQihT",
+  "pasportNo": "53107",
+  "nid": "252399",
+  "createdDate": "2023-11-18T21:23:32.1329819",
+  "updatedDate": "2023-11-18T21:23:32.1329825"
+}
+
