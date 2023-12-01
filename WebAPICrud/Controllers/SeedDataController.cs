@@ -24,7 +24,7 @@ public class SeedDataController : ControllerBase
         if (allBranch.Count() < 1)
         {
             var _GetBranchList = _SeedData.GetPersonalInfoList();
-            foreach (var item in _GetBranchList)
+            foreach (PersonalInfo item in _GetBranchList)
             {
                 _personalInfoRepository.Add(item);
                 await _personalInfoRepository.SaveChangesAsync();

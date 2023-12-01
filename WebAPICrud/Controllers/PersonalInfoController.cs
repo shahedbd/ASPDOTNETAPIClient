@@ -24,7 +24,7 @@ public class PersonalInfoController : ControllerBase
     [Route("GetBy/{id}")]
     public async Task<ActionResult<PersonalInfo>> GetBy(Int64 id)
     {
-        var result = await _personalInfoRepository.GetByIdAsync(id);
+        PersonalInfo result = await _personalInfoRepository.GetByIdAsync(id);
         if (result == null)
         {
             return Ok("Not Found");

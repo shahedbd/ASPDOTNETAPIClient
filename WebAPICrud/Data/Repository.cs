@@ -41,7 +41,7 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
     }
     public async Task Delete(Int64 id)
     {
-        var entity = await _entities.FindAsync(id);
+        T entity = await _entities.FindAsync(id);
         _entities.Remove(entity);
     }
     public async Task<bool> SaveChangesAsync()
