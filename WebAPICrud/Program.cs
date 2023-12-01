@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 
 
 builder.Services.AddScoped<ApplicationDbContext>();
-string connString = builder.Configuration.GetConnectionString("connMSSQL");
+string? connString = builder.Configuration.GetConnectionString("connMSSQL");
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connString));
 
 
