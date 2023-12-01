@@ -9,7 +9,7 @@ public class SeedData
         List<PersonalInfo> listPersonalInfo = new List<PersonalInfo>();
         for (int i = 0; i < 1000; i++)
         {
-            Random _Random = new Random();
+            Random _Random = new();
             PersonalInfo _PersonalInfo = new()
             {
                 FirstName = "Tom-" + GenerateString(6),
@@ -30,9 +30,10 @@ public class SeedData
         return listPersonalInfo;
     }
 
-    Random _Random = new();
-    public const string Alphabet = "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    public string GenerateString(int size)
+    readonly Random _Random = new();
+    private const string Alphabet = "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    private string GenerateString(int size)
     {
         char[] chars = new char[size];
         for (int i = 0; i < size; i++)
