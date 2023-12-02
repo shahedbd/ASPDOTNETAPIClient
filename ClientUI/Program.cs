@@ -1,12 +1,12 @@
 using ClientUI.APIClient;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped(typeof(IAPIClientService<>), typeof(APIClientService<>));
 
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
