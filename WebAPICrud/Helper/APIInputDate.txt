@@ -1,8 +1,14 @@
 
 
 WebAPICrud
+http://localhost:5186/PersonalInfo/GetAll
 https://localhost:5001/swagger/index.html
 http://localhost:5186/swagger/index.html
+
+
+https://localhost:61592/swagger/index.html
+
+
 
 
 -- Add PersonalInfo: API Input
