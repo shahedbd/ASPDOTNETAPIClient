@@ -3,13 +3,9 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-<<<<<<< .mine
     <UserSecretsId>9342fb87-be34-4615-a0e9-c1bc3d5ef6f4</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-=======
-    <LangVersion>12</LangVersion>
     <Nullable>enable</Nullable>
->>>>>>> .theirs
   </PropertyGroup>
 
   <ItemGroup>
