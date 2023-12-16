@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Entity.Models.PersonalInfo>
+﻿@using Entity.Models
+@model IEnumerable<Entity.Models.PersonalInfo>
 
 @{
     ViewData["Title"] = "Index";
@@ -18,7 +19,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (PersonalInfo item in Model)
         {
             <tr>
                 <td>
